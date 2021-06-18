@@ -1,20 +1,21 @@
+import React, { Component } from 'react';
+import AppNavbar from './components/appNavbar/appNavbar';
+import AppAside from './components/appAside/appAside';
+import AppAddNote from './components/appAddNote/appAddNote';
+import AppNoteList from './components/appNoteList/appNoteList';
 import './App.css';
-import './appNavbar.jsx';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <div className="App">
+        <AppNavbar />
+        <AppAside />
+        <AppAddNote />
+        <AppNoteList />
+      </div>
+    );
+  }
 }
 
 export default App;
