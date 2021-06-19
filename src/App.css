@@ -1,4 +1,32 @@
-div {
-  color: #888;
-  border: 1px solid;
+/* // global */
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  grid-area: header;
+}
+.aside {
+  grid-area: aside;
+}
+.add-note {
+  grid-area: add-note;
+}
+.note-list {
+  grid-area: note-list;
+}
+
+.App {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'aside add-note add-note add-note add-note '
+    'aside note-list note-list note-list note-list ';
 }
