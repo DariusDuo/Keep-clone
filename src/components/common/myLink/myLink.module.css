@@ -1,6 +1,7 @@
 .link {
   display: block;
   padding: 0.5em 0;
+  color: tomato;
 }
 
 .active {
@@ -13,5 +14,10 @@
 
 .link i,
 .active i {
-  padding: 0 1em;
+  padding: 0 0.7em;
+}
+
+.one-link {
+  margin: 10px;
+  background-color: tomato;
 }
